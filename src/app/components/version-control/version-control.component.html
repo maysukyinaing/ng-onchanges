@@ -1,0 +1,13 @@
+
+
+<form [formGroup]="versionForm" (ngSubmit)="formSubmit()">
+
+  <div class="form-group">
+    <label for="versionNumber">Version Number</label>
+    <input type="text" formControlName="version" class="form-control" id="versionNumber">
+  </div>
+  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+
+</form>
+
+<app-vc-logs [vName]="versionName"></app-vc-logs>
